@@ -1,0 +1,78 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = iris.unq
+@@@ header        = iris.hdr
+@@@ output        = iris-hrn_versicolor.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = iris-hrn_versicolor.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group setosa [50]:
++++ Group versicolor [50]:
++++ Group virginica [50]:
++++ Number of groups = 3
+
++++ Satisfying: versicolor
++++ Falsifying: setosa virginica
+
++++ Formula [41] =
+	  (sepal_length<4.3||sepal_length>=4.4805 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<4.3||sepal_length>=4.4805 + sepal_width<3.0845||sepal_width>=3.205)
+	* (sepal_length<4.4805||sepal_length>=4.661)
+	* (sepal_length<4.661||sepal_length>=4.8415 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<4.661||sepal_length>=4.8415 + sepal_width<3.0845||sepal_width>=3.205)
+	* (sepal_length<4.8415||sepal_length>=5.022 + sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_length<4.8415||sepal_length>=5.022 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<4.8415||sepal_length>=5.022 + sepal_width<3.0845||sepal_width>=3.205)
+	* (sepal_length<4.8415||sepal_length>=5.022 + sepal_width<3.5665||sepal_width>=3.687)
+	* (sepal_length<5.744||sepal_length>=5.9245 + sepal_width<3.928||sepal_width>=4.0485)
+	* (sepal_length<5.744||sepal_length>=5.9245 + petal_length<4.8415||petal_length>=5.137)
+	* (sepal_length<5.9245||sepal_length>=6.105 + sepal_width<2.482||sepal_width>=2.6025 + petal_length<5.4325||petal_length>=5.728 + petal_width<1.305||petal_width>=1.4255)
+	* (5.9245<=sepal_length<6.105 2.964<=sepal_width<3.0845 -> 1.305<=petal_width<1.4255)
+	* (sepal_length<5.9245||sepal_length>=6.105 + petal_length<4.8415||petal_length>=5.137 + petal_width<1.4255||petal_width>=1.546)
+	* (sepal_length<6.105||sepal_length>=6.2855 + sepal_width<2.723||sepal_width>=2.8435)
+	* (6.2855<=sepal_length<6.466 2.482<=sepal_width<2.6025 4.8415<=petal_length<5.137 -> 1.4255<=petal_width<1.546)
+	* (sepal_length<6.2855||sepal_length>=6.466 + sepal_width<2.723||sepal_width>=2.8435 + petal_length<5.4325||petal_length>=5.728)
+	* (sepal_length<6.2855||sepal_length>=6.466 + petal_length<5.137||petal_length>=5.4325)
+	* (6.2855<=sepal_length<6.466 4.8415<=petal_length<5.137 -> 2.482<=sepal_width<2.6025)
+	* (sepal_length<7.188||sepal_length>=7.3685)
+	* (sepal_length<7.3685||sepal_length>=7.549 + sepal_width<2.723||sepal_width>=2.8435)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.723||sepal_width>=2.8435)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_width<2.482||sepal_width>=2.6025 + petal_length<5.728||petal_length>=6.0235)
+	* (sepal_width<2.723||sepal_width>=2.8435 + petal_length<4.8415||petal_length>=5.137)
+	* (sepal_width<2.964||sepal_width>=3.0845 + petal_length<5.137||petal_length>=5.4325)
+	* (sepal_width<2.964||sepal_width>=3.0845 + petal_length<5.4325||petal_length>=5.728)
+	* (sepal_width<2.964||sepal_width>=3.0845 + petal_length<5.728||petal_length>=6.0235)
+	* (3.0845<=sepal_width<3.205 4.8415<=petal_length<5.137 -> 1.4255<=petal_width<1.546)
+	* (sepal_width<3.0845||sepal_width>=3.205 + petal_length<5.137||petal_length>=5.4325)
+	* (sepal_width<3.0845||sepal_width>=3.205 + petal_length<5.4325||petal_length>=5.728)
+	* (sepal_width<3.0845||sepal_width>=3.205 + petal_length<5.728||petal_length>=6.0235)
+	* (sepal_width<3.205||sepal_width>=3.3255)
+	* (sepal_width<3.446||sepal_width>=3.5665)
+	* (sepal_width<3.687||sepal_width>=3.8075)
+	* (sepal_width<3.8075||sepal_width>=3.928)
+	* (sepal_width<4.0485||sepal_width>=4.169)
+	* (sepal_width<4.169||sepal_width>=4.2895)
+	* (2.482<=sepal_width<2.6025 4.8415<=petal_length<5.137 -> 6.2855<=sepal_length<6.466)
+	* (3.3255<=sepal_width<3.446 -> 5.9245<=sepal_length<6.105)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 49
++++ true  negative (tn)  = 97
++++ false positive (fp)  = 3
++++ false negative (fn)  = 1
++++ sensitivity    (tpr) = 98      %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 2       %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 3       %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 97      %	 [tn / (tn + fp)]
++++ precision      (ppv) = 94.2308 %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 97.3333 %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 96.0784 %	 [tp / (tp + 0.5 * (fp +fn))]

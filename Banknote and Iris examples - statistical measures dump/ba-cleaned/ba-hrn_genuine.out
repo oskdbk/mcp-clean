@@ -1,0 +1,145 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = ba.unq
+@@@ header        = ba.hdr
+@@@ output        = ba-hrn_genuine.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = ba-hrn_genuine.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group forged [761]:
++++ Group genuine [610]:
++++ Number of groups = 2
+
++++ Satisfying: genuine
++++ Falsifying: forged
+
++++ Formula [109] =
+	  (wti_variance<-1.49534||wti_variance>=-0.80199 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_variance<-1.49534||wti_variance>=-0.80199 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<-1.49534||wti_variance>=-0.80199 + wti_skewness<10.2791||wti_skewness>=11.6154)
+	* (wti_variance<-1.49534||wti_variance>=-0.80199 + wti_skewness<11.6154||wti_skewness>=12.9516)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<10.2791||wti_skewness>=11.6154)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<4.9342||wti_skewness>=6.27043 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<4.9342||wti_skewness>=6.27043 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_skewness<10.2791||wti_skewness>=11.6154 + wti_curtosis<-1.80407||wti_curtosis>=-0.643398)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_curtosis<6.32065||wti_curtosis>=7.48133)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<2.26173||wti_skewness>=3.59796 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<2.26173||wti_skewness>=3.59796 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<-1.80407||wti_curtosis>=-0.643398)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<4.9342||wti_skewness>=6.27043 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<4.9342||wti_skewness>=6.27043 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<10.2791||wti_skewness>=11.6154 + wti_curtosis<-1.80407||wti_curtosis>=-0.643398)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<6.32065||wti_curtosis>=7.48133)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (1.27805<=wti_variance<1.97139 2.26173<=wti_skewness<3.59796 -> -4.12542<=wti_curtosis<-2.96475)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_variance<1.27805||wti_variance>=1.97139 + wti_curtosis<8.64201||wti_curtosis>=9.80268)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<2.26173||wti_skewness>=3.59796)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<8.9429||wti_skewness>=10.2791 + wti_curtosis<-4.12542||wti_curtosis>=-2.96475)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_skewness<10.2791||wti_skewness>=11.6154 + wti_curtosis<-4.12542||wti_curtosis>=-2.96475)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_curtosis<6.32065||wti_curtosis>=7.48133)
+	* (wti_variance<1.97139||wti_variance>=2.66474 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<2.26173||wti_skewness>=3.59796)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_skewness<10.2791||wti_skewness>=11.6154 + wti_curtosis<-4.12542||wti_curtosis>=-2.96475)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_variance<2.66474||wti_variance>=3.35808 + wti_curtosis<6.32065||wti_curtosis>=7.48133)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<0.92549||wti_skewness>=2.26173)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<2.26173||wti_skewness>=3.59796)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<6.27043||wti_skewness>=7.60667)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<7.60667||wti_skewness>=8.9429)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_skewness<10.2791||wti_skewness>=11.6154)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<3.35808||wti_variance>=4.05143 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<4.05143||wti_variance>=4.74477)
+	* (wti_variance<4.74477||wti_variance>=5.43812)
+	* (wti_variance<5.43812||wti_variance>=6.13146)
+	* (wti_variance<6.13146||wti_variance>=6.82481 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<6.13146||wti_variance>=6.82481 + wti_skewness<8.9429||wti_skewness>=10.2791)
+	* (wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<6.32065||wti_curtosis>=7.48133)
+	* (wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<6.32065||wti_curtosis>=7.48133)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<7.48133||wti_curtosis>=8.64201)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<8.64201||wti_curtosis>=9.80268)
+	* (wti_skewness<7.60667||wti_skewness>=8.9429 + wti_curtosis<-1.80407||wti_curtosis>=-0.643398)
+	* (wti_skewness<7.60667||wti_skewness>=8.9429 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_skewness<8.9429||wti_skewness>=10.2791 + wti_curtosis<-1.80407||wti_curtosis>=-0.643398)
+	* (wti_skewness<10.2791||wti_skewness>=11.6154 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_skewness<10.2791||wti_skewness>=11.6154 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_skewness<11.6154||wti_skewness>=12.9516 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_skewness<11.6154||wti_skewness>=12.9516 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 610
++++ true  negative (tn)  = 753
++++ false positive (fp)  = 8
++++ false negative (fn)  = 0
++++ sensitivity    (tpr) = 100     %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 0       %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 1.05125 %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 98.9488 %	 [tn / (tn + fp)]
++++ precision      (ppv) = 98.7055 %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 99.4165 %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 99.3485 %	 [tp / (tp + 0.5 * (fp +fn))]

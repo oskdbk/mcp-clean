@@ -1,0 +1,44 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = iris.unq
+@@@ header        = iris.hdr
+@@@ output        = iris-bij_versicolor.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = iris-bij_versicolor.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group setosa [50]:
++++ Group versicolor [50]:
++++ Group virginica [50]:
++++ Number of groups = 3
+
++++ Satisfying: versicolor
++++ Falsifying: setosa virginica
+
++++ Formula [7] =
+	  (sepal_length<4.4805||sepal_length>=4.661)
+	* (sepal_length<5.5635||sepal_length>=5.744 + petal_length<4.8415||petal_length>=5.137)
+	* (sepal_length<5.744||sepal_length>=5.9245 + petal_length<4.8415||petal_length>=5.137)
+	* (sepal_length<5.9245||sepal_length>=6.105 + sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_length<6.105||sepal_length>=6.2855 + sepal_width<2.723||sepal_width>=2.8435)
+	* (sepal_length<6.2855||sepal_length>=6.466 + sepal_width<2.6025||sepal_width>=2.723)
+	* (sepal_length<6.2855||sepal_length>=6.466 + sepal_width<2.723||sepal_width>=2.8435)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 50
++++ true  negative (tn)  = 18
++++ false positive (fp)  = 82
++++ false negative (fn)  = 0
++++ sensitivity    (tpr) = 100     %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 0       %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 82      %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 18      %	 [tn / (tn + fp)]
++++ precision      (ppv) = 37.8788 %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 45.3333 %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 54.9451 %	 [tp / (tp + 0.5 * (fp +fn))]
