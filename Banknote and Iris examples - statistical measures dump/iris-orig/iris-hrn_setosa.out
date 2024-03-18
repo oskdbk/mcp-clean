@@ -1,0 +1,52 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = iris.chk
+@@@ header        = iris.hdr
+@@@ output        = iris-hrn_setosa.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = iris-hrn_setosa.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group setosa [19]:
++++ Group versicolor [25]:
++++ Group virginica [29]:
++++ Number of groups = 3
+
++++ Satisfying: setosa
++++ Falsifying: versicolor virginica
+
++++ Formula [15] =
+	  (sepal_length<5.383||sepal_length>=5.5635 + sepal_width<2.3615||sepal_width>=2.482)
+	* (sepal_length<5.383||sepal_length>=5.5635 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<5.5635||sepal_length>=5.744 + sepal_width<2.8435||sepal_width>=2.964)
+	* (sepal_length<5.5635||sepal_length>=5.744 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<5.9245||sepal_length>=6.105)
+	* (sepal_length<6.105||sepal_length>=6.2855)
+	* (sepal_length<6.2855||sepal_length>=6.466)
+	* (sepal_length<6.466||sepal_length>=6.6465 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<6.6465||sepal_length>=6.827)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_width<2||sepal_width>=2.1205)
+	* (sepal_width<2.241||sepal_width>=2.3615)
+	* (sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_width<2.6025||sepal_width>=2.723)
+	* (sepal_width<2.723||sepal_width>=2.8435)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 18
++++ true  negative (tn)  = 36
++++ false positive (fp)  = 18
++++ false negative (fn)  = 1
++++ sensitivity    (tpr) = 94.7368 %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 5.26316 %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 33.3333 %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 66.6667 %	 [tn / (tn + fp)]
++++ precision      (ppv) = 50      %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 73.9726 %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 65.4545 %	 [tp / (tp + 0.5 * (fp +fn))]

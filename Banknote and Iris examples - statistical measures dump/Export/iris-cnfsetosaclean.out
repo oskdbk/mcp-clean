@@ -1,0 +1,7 @@
++++ sensitivity    (tpr) = 100     %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 0       %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 0       %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 100     %	 [tn / (tn + fp)]
++++ precision      (ppv) = 100     %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 100     %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 100     %	 [tp / (tp + 0.5 * (fp +fn))]

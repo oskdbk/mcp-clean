@@ -1,0 +1,59 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = iris.unq
+@@@ header        = iris.hdr
+@@@ output        = iris-hrn_setosa.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = iris-hrn_setosa.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group setosa [50]:
++++ Group versicolor [50]:
++++ Group virginica [50]:
++++ Number of groups = 3
+
++++ Satisfying: setosa
++++ Falsifying: versicolor virginica
+
++++ Formula [22] =
+	  (sepal_length<5.383||sepal_length>=5.5635 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<5.5635||sepal_length>=5.744 + sepal_width<2.8435||sepal_width>=2.964)
+	* (sepal_length<5.5635||sepal_length>=5.744 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<5.744||sepal_length>=5.9245 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<5.744||sepal_length>=5.9245 + sepal_width<3.0845||sepal_width>=3.205)
+	* (sepal_length<5.9245||sepal_length>=6.105)
+	* (sepal_length<6.105||sepal_length>=6.2855)
+	* (sepal_length<6.2855||sepal_length>=6.466)
+	* (sepal_length<6.466||sepal_length>=6.6465 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<6.466||sepal_length>=6.6465 + sepal_width<3.0845||sepal_width>=3.205)
+	* (sepal_length<6.6465||sepal_length>=6.827)
+	* (sepal_length<6.827||sepal_length>=7.0075 + sepal_width<3.0845||sepal_width>=3.205)
+	* (sepal_length<7.0075||sepal_length>=7.188 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<7.188||sepal_length>=7.3685)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<7.7295||sepal_length>=7.91)
+	* (sepal_width<2||sepal_width>=2.1205)
+	* (sepal_width<2.3615||sepal_width>=2.482)
+	* (sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_width<2.6025||sepal_width>=2.723)
+	* (sepal_width<2.723||sepal_width>=2.8435)
+	* (2.241<=sepal_width<2.3615 -> 4.4805<=sepal_length<4.661)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 50
++++ true  negative (tn)  = 98
++++ false positive (fp)  = 2
++++ false negative (fn)  = 0
++++ sensitivity    (tpr) = 100     %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 0       %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 2       %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 98      %	 [tn / (tn + fp)]
++++ precision      (ppv) = 96.1538 %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 98.6667 %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 98.0392 %	 [tp / (tp + 0.5 * (fp +fn))]

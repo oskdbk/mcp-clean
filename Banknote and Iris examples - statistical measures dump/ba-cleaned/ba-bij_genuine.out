@@ -1,0 +1,62 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = ba.unq
+@@@ header        = ba.hdr
+@@@ output        = ba-bij_genuine.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = ba-bij_genuine.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group forged [761]:
++++ Group genuine [610]:
++++ Number of groups = 2
+
++++ Satisfying: genuine
++++ Falsifying: forged
+
++++ Formula [26] =
+	  (wti_variance<-4.96206||wti_variance>=-4.26872 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<-2.18868||wti_variance>=-1.49534 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<-0.80199||wti_variance>=-0.108645 + wti_skewness<4.9342||wti_skewness>=6.27043)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_variance<-0.108645||wti_variance>=0.584701 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<-5.75569||wti_skewness>=-4.41945)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_skewness<-1.74698||wti_skewness>=-0.410745)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_variance<0.584701||wti_variance>=1.27805 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_skewness<-1.74698||wti_skewness>=-0.410745 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_skewness<-1.74698||wti_skewness>=-0.410745 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_skewness<-0.410745||wti_skewness>=0.92549 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_skewness<0.92549||wti_skewness>=2.26173 + wti_curtosis<5.15998||wti_curtosis>=6.32065)
+	* (wti_skewness<2.26173||wti_skewness>=3.59796 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_skewness<2.26173||wti_skewness>=3.59796 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_skewness<2.26173||wti_skewness>=3.59796 + wti_curtosis<3.9993||wti_curtosis>=5.15998)
+	* (wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<0.517277||wti_curtosis>=1.67795)
+	* (wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+	* (wti_skewness<3.59796||wti_skewness>=4.9342 + wti_curtosis<2.83863||wti_curtosis>=3.9993)
+	* (wti_skewness<4.9342||wti_skewness>=6.27043 + wti_curtosis<-2.96475||wti_curtosis>=-1.80407)
+	* (wti_skewness<4.9342||wti_skewness>=6.27043 + wti_curtosis<1.67795||wti_curtosis>=2.83863)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 610
++++ true  negative (tn)  = 133
++++ false positive (fp)  = 628
++++ false negative (fn)  = 0
++++ sensitivity    (tpr) = 100     %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 0       %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 82.523  %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 17.477  %	 [tn / (tn + fp)]
++++ precision      (ppv) = 49.273  %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 54.194  %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 66.0173 %	 [tp / (tp + 0.5 * (fp +fn))]

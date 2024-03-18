@@ -1,0 +1,62 @@
+@@@ Parameters:
+@@@ ===========
+@@@ version       = 1.04f-danube-check
+@@@ input         = iris.chk
+@@@ header        = iris.hdr
+@@@ output        = iris-hrn_versicolor.out
+@@@ var. offset   = 0
+@@@ print matrix  = undefined (will be changed)
+@@@ print formula = mixed
+@@@ formula input = iris-hrn_versicolor.log
+
++++ Own names for variables
+@@@ print matrix  = hide (redefined)
++++ Arity = 80
++++ Group setosa [19]:
++++ Group versicolor [25]:
++++ Group virginica [29]:
++++ Number of groups = 3
+
++++ Satisfying: versicolor
++++ Falsifying: setosa virginica
+
++++ Formula [25] =
+	  (sepal_length<4.3||sepal_length>=4.4805 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<4.661||sepal_length>=4.8415 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<4.8415||sepal_length>=5.022 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<5.5635||sepal_length>=5.744 + sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_length<5.5635||sepal_length>=5.744 + sepal_width<4.2895||sepal_width>=4.41)
+	* (5.744<=sepal_length<5.9245 2.6025<=sepal_width<2.723 -> 3.6595<=petal_length<3.955)
+	* (5.744<=sepal_length<5.9245 -> 2.6025<=sepal_width<2.723)
+	* (sepal_length<5.9245||sepal_length>=6.105 + sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_length<6.105||sepal_length>=6.2855 + sepal_width<2.723||sepal_width>=2.8435)
+	* (6.2855<=sepal_length<6.466 2.482<=sepal_width<2.6025 -> 1.4255<=petal_width<1.546)
+	* (sepal_length<6.2855||sepal_length>=6.466 + sepal_width<2.6025||sepal_width>=2.723)
+	* (sepal_length<6.2855||sepal_length>=6.466 + sepal_width<2.723||sepal_width>=2.8435 + petal_width<1.4255||petal_width>=1.546)
+	* (sepal_length<6.2855||sepal_length>=6.466 + sepal_width<2.8435||sepal_width>=2.964)
+	* (sepal_length<6.466||sepal_length>=6.6465 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<6.6465||sepal_length>=6.827 + sepal_width<2.482||sepal_width>=2.6025)
+	* (sepal_length<6.6465||sepal_length>=6.827 + sepal_width<2.964||sepal_width>=3.0845)
+	* (sepal_length<7.3685||sepal_length>=7.549 + sepal_width<2.723||sepal_width>=2.8435)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.723||sepal_width>=2.8435)
+	* (sepal_length<7.549||sepal_length>=7.7295 + sepal_width<2.964||sepal_width>=3.0845)
+	* (3.0845<=sepal_width<3.205 -> 1.4255<=petal_width<1.546)
+	* (sepal_width<3.205||sepal_width>=3.3255)
+	* (sepal_width<3.446||sepal_width>=3.5665)
+	* (sepal_width<3.687||sepal_width>=3.8075)
+	* (sepal_width<3.8075||sepal_width>=3.928)
+	* (3.3255<=sepal_width<3.446 -> 5.9245<=sepal_length<6.105)
+
++++ Statistics:
+    ===========
++++ true  positive (tp)  = 13
++++ true  negative (tn)  = 30
++++ false positive (fp)  = 18
++++ false negative (fn)  = 12
++++ sensitivity    (tpr) = 52      %	 [tp / (tp + fn)]
++++ miss rate      (fnr) = 48      %	 [fn / (fn + tp)]
++++ fall-out       (fnr) = 37.5    %	 [fp / (fp + tn)]
++++ specificity    (tnr) = 62.5    %	 [tn / (tn + fp)]
++++ precision      (ppv) = 41.9355 %	 [tp / (tp + fp)]
++++ accuracy       (acc) = 58.9041 %	 [(tp + tn) / (tp + tn + fp +fn)]
++++ F_1 score      (F_1) = 46.4286 %	 [tp / (tp + 0.5 * (fp +fn))]
